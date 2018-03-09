@@ -1,4 +1,7 @@
 import { StackNavigator } from 'react-navigation'
+import ProfileScreen from '../Containers/ProfileScreen'
+import { Icon } from 'react-native-elements';
+
 import UserListScreen from '../Containers/UserListScreen'
 import New from '../Containers/New'
 import SignupScreen from '../Containers/SignupScreen'
@@ -9,6 +12,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  ProfileScreen: { screen: ProfileScreen },
   UserListScreen: { screen: UserListScreen },
   New: { screen: New },
   SignupScreen: { screen: SignupScreen },
@@ -17,10 +21,12 @@ const PrimaryNav = StackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'UserListScreen',
+  initialRouteName: 'ProfileScreen',
   navigationOptions: {
     headerStyle: styles.header
   }
 })
 
 export default PrimaryNav
+
+

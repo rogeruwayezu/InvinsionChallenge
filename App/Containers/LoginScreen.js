@@ -6,6 +6,7 @@ import Container from '../Components/Container'
 import Button from '../Components/Button'
 import Footer from '../Components/Footer'
 import Icon from '../Components/Icon'
+
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
